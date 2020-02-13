@@ -5,14 +5,16 @@ using System.Text;
 namespace BankingLibrary {
     public class Savings : InterestBearingAccount {
 
-
+        private void setDescription(string description) {
+            this.Description = description;
+        }
 
 
         public Savings(double InterestRate) : base(InterestRate) {
-
+            setDescription("Savings");
         }
         public Savings() : base() {
-            Description = "Savings";
+            setDescription("Savings");
 
         }
     }

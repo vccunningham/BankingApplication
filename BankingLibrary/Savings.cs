@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace BankingLibrary {
-    public class Savings : InterestBearingAccount {
+    public class Savings : InterestAccount {
 
         private void setDescription(string description) {
             this.Description = description;

@@ -13,7 +13,7 @@ namespace BankingApplication {
             
 
 
-            var int1 = new InterestBearingAccount(0.12);
+            var int1 = new InterestAccount(0.12);
             int1.Deposit(100);
             int1.CalculateInterest(3);
             int1.Debug();
@@ -21,7 +21,7 @@ namespace BankingApplication {
             // 'm' means treat as a decimal
 
 
-            var Chk1 = new Account();
+            var Chk1 = new Checking();
             Chk1.Deposit(100);
             Chk1.Withdraw(75);
             Chk1.Deposit(-10);
@@ -29,7 +29,7 @@ namespace BankingApplication {
             Chk1.Deposit(0);
             Chk1.Withdraw(100);
 
-            var Chk2 = new Account();
+            var Chk2 = new Checking();
             Chk2.Deposit(200);
             Chk2.Withdraw(40);
 
@@ -43,8 +43,8 @@ namespace BankingApplication {
             var accounts = new List<Account>();
             accounts.Add(sav1);
             accounts.Add(int1);
-            accounts.Add(Chk2);
-            accounts.Add(Chk1);
+            //accounts.Add(Chk2);
+            //accounts.Add(Chk1);
 
         }
     }

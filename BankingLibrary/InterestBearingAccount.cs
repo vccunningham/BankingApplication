@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace BankingLibrary {
-    public class InterestBearingAccount : Account {
+    public class InterestAccount : Account {
 
         public decimal InterestRate { get; private set; }
 
@@ -17,11 +17,11 @@ namespace BankingLibrary {
             //return base.ToString() + $" Interest Rate= {InterestRate}";
             return $" {base.ToString()} + Interest Rate={InterestRate}";
         }
-        public InterestBearingAccount(double interestRate) : this() {
+        public InterestAccount(double interestRate) : this() {
             InterestRate = Convert.ToDecimal(interestRate);
             //Convert is what you want to change the method into
         }
-        public InterestBearingAccount() : base() {
+        public InterestAccount() : base() {
 
             this.Description = "Interest Account";
 

@@ -5,7 +5,7 @@ using System.Text;
 namespace BankingLibrary {
     public class Checking {
         
-        private InterestAccount iacct;
+        public InterestAccount iacct { get; private set; }
         public int CheckNbr { get; private set; }
 
         public void Deposit(decimal amount) {
